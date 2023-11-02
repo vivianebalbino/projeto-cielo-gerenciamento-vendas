@@ -1,0 +1,63 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Análise Vendas Mensal</h1>
+  <mat-grid-list [cols]="(cards | async)?.columns" rowHeight="200px">
+    <mat-grid-tile
+      *ngFor="let mc of miniCardData"
+      [colspan]="(cards | async)?.miniCard?.cols"
+      [rowspan]="(cards | async)?.miniCard?.rows"
+    >
+      <app-mini-card
+        [icon]="mc.icon"
+        [title]="mc.title"
+        [value]="mc.value"
+        [color]="mc.color"
+        [isCurrency]="mc.isCurrency"
+      ></app-mini-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile
+      [colspan]="(cards | async)?.card?.cols"
+      [rowspan]="(cards | async)?.card?.rows"
+    >
+      <app-card title="Total Vendas">
+        <app-annual-sales-chart></app-annual-sales-chart>
+      </app-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile
+      [colspan]="(cards | async)?.card?.cols"
+      [rowspan]="(cards | async)?.card?.rows"
+    >
+      <app-card title="Status Vendas">
+        <app-product-sales-chart></app-product-sales-chart>
+      </app-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile
+      [colspan]="(cards | async)?.card?.cols"
+      [rowspan]="(cards | async)?.card?.rows"
+    >
+      <app-card title="Bandeira Cartão Pagamento">
+        <app-sales-traffic-chart></app-sales-traffic-chart>
+      </app-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile
+      [colspan]="(cards | async)?.card?.cols"
+      [rowspan]="(cards | async)?.card?.rows"
+    >
+      <app-card title="Tipo de Pagamento">
+        <app-store-sessions-chart></app-store-sessions-chart>
+      </app-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile
+      [colspan]="(cards | async)?.table?.cols"
+      [rowspan]="(cards | async)?.table?.rows"
+    >
+      <app-card title="Movimentações">
+        <app-orders-table></app-orders-table>
+      </app-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

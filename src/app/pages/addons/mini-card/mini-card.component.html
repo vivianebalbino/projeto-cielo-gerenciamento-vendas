@@ -1,0 +1,12 @@
+<mat-card class="dashboard-card">
+    <mat-card-header class="card-header">
+        <mat-card-title>
+            <h1 class="value-text" *ngIf="isCurrency">{{value | currency: 'BRL' }}</h1>
+            <h1 class="value-text" *ngIf="!isCurrency">{{value}}</h1>
+        </mat-card-title>
+        <div mat-card-avatar class="card-icon">
+            <mat-icon [color]="color" class="avatar-icon">{{icon}}</mat-icon>
+        </div>
+    </mat-card-header>
+    <h3 class="title-text">{{title}}</h3>
+</mat-card>
