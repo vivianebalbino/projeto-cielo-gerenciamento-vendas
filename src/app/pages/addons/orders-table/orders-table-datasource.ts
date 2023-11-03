@@ -22,8 +22,8 @@ export class OrdersTableDataSource extends DataSource<Order> {
 
     return merge(dataMutations).pipe(mergeMap(() => {
       return this.orderService.getOrders(
-        this.paginator.pageIndex * this.paginator.pageSize,
-        this.paginator.pageSize,
+        0,
+        10,
         this.sort.active,
         this.sort.direction
         );

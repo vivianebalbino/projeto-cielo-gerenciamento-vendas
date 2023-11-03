@@ -78,7 +78,7 @@
       "minimumMDRAmmount":-3.51,
       "mdrTaxAmount":0.0,
       "mdrFeeAmount":-3.51,
-      "status":"Aprovada"
+      "status":"Negada"
     },
     {
       "id":"114606514478706",
@@ -144,7 +144,7 @@
       "minimumMDRAmmount":0.0,
       "mdrTaxAmount":0.0,
       "mdrFeeAmount":-3.51,
-      "status":"Aprovada"
+      "status":"Pendente"
     },
     {
       "id":"114606514478366",
@@ -210,7 +210,7 @@
       "minimumMDRAmmount":0.0,
       "mdrTaxAmount":0.0,
       "mdrFeeAmount":-20.34,
-      "status":"Aprovada"
+      "status":"Pendente"
     },
     {
       "id":"114606514478685",

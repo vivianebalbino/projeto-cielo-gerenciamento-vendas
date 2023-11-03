@@ -20,6 +20,7 @@ export class OrdersTableComponent implements AfterViewInit, OnInit {
   dataSource!: OrdersTableDataSource;
   dataLength!: number;
   errorMessage!: string;
+  event: any;
 
   displayedColumns = [
     "id",
@@ -40,6 +41,8 @@ export class OrdersTableComponent implements AfterViewInit, OnInit {
       },
     });
   }
+
+ 
 
   ngAfterViewInit() {
     this.dataSource.sort = this.sort;

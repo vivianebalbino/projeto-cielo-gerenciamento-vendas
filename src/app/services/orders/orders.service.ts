@@ -72,15 +72,15 @@ export class OrderService {
       switch (active) {
         case 'id':
           return compare(+a.id, +b.id, isAsc);
-        case 'date':
+        case 'paymentType':
           return compare(+a.paymentType, +b.paymentType, isAsc);
-        case 'name':
+        case 'cardBrand':
           return compare(+a.cardBrand, +b.cardBrand, isAsc);
-        case 'status':
+        case 'netAmount':
           return compare(+a.netAmount, +b.netAmount, isAsc);
-        case 'orderTotal':
+        case 'channel':
           return compare(+a.channel, +b.channel, isAsc);
-        case 'paymentMode':
+        case 'status':
           return compare(+a.status, +b.status, isAsc);
         default:
           return 0;

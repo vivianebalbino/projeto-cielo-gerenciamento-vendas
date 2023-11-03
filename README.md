@@ -1,13 +1,13 @@
 # projeto-cielo-gerenciamento-vendas
 
-Para executar a instalação do projeto:
-@angular/materal
-ng2-charts
-json-server
+<p>Para executar a instalação do projeto:<br></p>
+<p>@angular/materal</p>
+<p>ng2-charts</p>
+<p>json-server</p>
 <hr>
 Comandos para rodar o projeto:
 <p>>npm start</p>
-<p>Caso não tenha instalado Json Server rodar o comando: <br> npm install -g json-server</p>
+<p>Caso não tenha instalado Json Server rodar o comando: <br>>npm install -g json-server</p>
 <p>>json-server --watch src/api/db.json</p>
 <hr>
 
